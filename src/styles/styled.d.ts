@@ -10,6 +10,7 @@ declare module "styled-components" {
 
       navbar: string;
       background: string;
+      silverBackground: string;
       cardBackground: string;
       text: string;
       textSecondary: string;

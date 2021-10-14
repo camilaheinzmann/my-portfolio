@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   width: 100%;
   max-width: 1170px;
-  height: 500px;
+  height: 75vh;
 
   padding: 0 15px;
 

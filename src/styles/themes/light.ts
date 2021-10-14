@@ -8,6 +8,7 @@ export default {
 
     navbar: "#fff",
     background: "#fafafa",
+    silverBackground: "#f3f4f6",
     cardBackground: "#fff",
     text: "#2d314d",
     textSecondary: "#9698a6",
