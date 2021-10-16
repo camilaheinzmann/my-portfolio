@@ -71,6 +71,6 @@ export const Subtitle = styled.div`
 
   @media (max-width: 767px) {
     text-align: center;
-    color: ${(props) => props.theme.colors.textContrast};
+    color: ${(props) => props.theme.colors.navbar};
   }
 `;

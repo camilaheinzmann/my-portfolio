@@ -12,6 +12,5 @@ export default {
     cardBackground: "#fff",
     text: "#2d314d",
     textSecondary: "#9698a6",
-    textContrast: "#f3f4f6",
   },
 };

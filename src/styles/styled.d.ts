@@ -14,7 +14,6 @@ declare module "styled-components" {
       cardBackground: string;
       text: string;
       textSecondary: string;
-      textContrast: string;
     };
   }
 }

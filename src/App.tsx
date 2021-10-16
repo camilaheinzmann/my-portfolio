@@ -8,6 +8,7 @@ import GlobalStyle from "./styles/global";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import AboutMe from "./components/AboutMe";
+import MyProjects from "./components/MyProjects";
 
 function App() {
   const [theme, setTheme] = usePersistedTheme<DefaultTheme>("theme", light);
@@ -22,6 +23,7 @@ function App() {
       <Nav toggleTheme={toggleTheme} />
       <Banner />
       <AboutMe />
+      <MyProjects />
     </ThemeProvider>
   );
 }

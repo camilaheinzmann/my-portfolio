@@ -178,6 +178,7 @@ export const LabelTech = styled.span`
     `linear-gradient(90deg, ${props.theme.colors.primary}, ${props.theme.colors.secondary} )`};
   background-size: 150%;
 
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 

@@ -26,8 +26,8 @@ function Nav({ toggleTheme }: NavProps) {
           height={25}
           width={50}
           handleDiameter={25}
-          onHandleColor={colors.primary}
-          offHandleColor={colors.secondary}
+          onHandleColor={colors.secondary}
+          offHandleColor={colors.primary}
           offColor={shade(0.15, colors.background)}
           onColor={colors.background}
         />
