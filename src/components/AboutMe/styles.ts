@@ -29,8 +29,15 @@ export const InfoContainer = styled.div`
     height: min-content;
 
     @media (max-width: 768px) {
-      display: none;
+      width: 60%;
+      max-width: 300px;
+      margin: 0;
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `;
 
@@ -45,20 +52,23 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 768px) {
     text-align: center;
+    padding-top: 20px;
+    flex: 1;
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h1`
+  font-weight: 500;
   font-size: 36px;
   padding-bottom: 20px;
 
   @media (max-width: 768px) {
-    margin: auto;
+    margin: 0 auto;
     font-size: 28px;
   }
 `;
 
-export const About = styled.div`
+export const About = styled.p`
   font-size: 20px;
   margin-bottom: 30px;
 
@@ -136,7 +146,8 @@ export const FrontCard = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  svg {
+  svg,
+  img {
     width: 40px;
     height: min-content;
   }
@@ -158,15 +169,19 @@ export const BackCard = styled.div`
   backface-visibility: hidden;
 
   span {
-    background: ${(props) =>
-      `linear-gradient(90deg, ${props.theme.colors.primary}, ${props.theme.colors.secondary} )`};
-    background-size: 150%;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-align: center;
-    font-weight: 700;
-    font-size: 12px;
   }
+`;
+
+export const LabelTech = styled.span`
+  user-select: none;
+  background: ${(props) =>
+    `linear-gradient(90deg, ${props.theme.colors.primary}, ${props.theme.colors.secondary} )`};
+  background-size: 150%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
 `;

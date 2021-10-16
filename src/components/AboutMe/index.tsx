@@ -10,6 +10,7 @@ import {
   InnerCard,
   FrontCard,
   BackCard,
+  LabelTech,
 } from "./styles";
 
 import { ReactComponent as GirlProgramming } from "../../assets/img/girl-programming.svg";
@@ -51,7 +52,7 @@ function AboutMe() {
                 <Html5Icon />
               </FrontCard>
               <BackCard>
-                <span>HTML5</span>
+                <LabelTech>HTML5</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -61,7 +62,7 @@ function AboutMe() {
                 <Css3Icon />
               </FrontCard>
               <BackCard>
-                <span>CSS3</span>
+                <LabelTech>CSS3</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -71,7 +72,7 @@ function AboutMe() {
                 <JavascriptIcon />
               </FrontCard>
               <BackCard>
-                <span>Javascript</span>
+                <LabelTech>JavaScript</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -81,7 +82,7 @@ function AboutMe() {
                 <TypescriptIcon />
               </FrontCard>
               <BackCard>
-                <span>Typescript</span>
+                <LabelTech>TypeScript</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -91,7 +92,7 @@ function AboutMe() {
                 <ReactIcon />
               </FrontCard>
               <BackCard>
-                <span>ReactJS</span>
+                <LabelTech>ReactJS</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -101,7 +102,7 @@ function AboutMe() {
                 <ReduxIcon />
               </FrontCard>
               <BackCard>
-                <span>Redux</span>
+                <LabelTech>Redux</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -111,7 +112,7 @@ function AboutMe() {
                 <JQueryIcon />
               </FrontCard>
               <BackCard>
-                <span>jQuery</span>
+                <LabelTech>jQuery</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -121,7 +122,7 @@ function AboutMe() {
                 <SassIcon />
               </FrontCard>
               <BackCard>
-                <span>Sass</span>
+                <LabelTech>Sass</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -131,7 +132,7 @@ function AboutMe() {
                 <BootstrapIcon />
               </FrontCard>
               <BackCard>
-                <span>Bootstrap</span>
+                <LabelTech>Bootstrap</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
@@ -141,7 +142,7 @@ function AboutMe() {
                 <StyledComponentsIcon />
               </FrontCard>
               <BackCard>
-                <span>Styled Components</span>
+                <LabelTech>Styled Components</LabelTech>
               </BackCard>
             </InnerCard>
           </Badge>
