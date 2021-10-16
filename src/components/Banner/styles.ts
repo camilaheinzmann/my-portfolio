@@ -30,6 +30,7 @@ export const Container = styled.div`
 
     g > use {
       fill: ${(props) => props.theme.colors.text};
+      transition: fill 0.3s;
     }
 
     @media (max-width: 767px) {

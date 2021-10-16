@@ -12,6 +12,7 @@ export default createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
     
     font-family: 'Public Sans', sans-serif;
+    transition: color 0.3s;
   }
 
   * {
