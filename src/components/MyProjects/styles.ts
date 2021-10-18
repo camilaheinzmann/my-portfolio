@@ -35,47 +35,12 @@ export const Title = styled.h1`
   }
 `;
 
-export const Card = styled.div`
-  width: 32%;
-  height: 200px;
+export const Thumb = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
-  position: relative;
-
-  margin-bottom: 20px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    transition: transform 0.5s ease-in-out;
-  }
-
-  &:hover {
-    div {
-      opacity: 1;
-    }
-
-    img {
-      transform: scale(1.1);
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    width: 49%;
-    height: 250px;
-  }
-
-  @media (min-width: 576px) and (max-width: 767px) {
-    width: 48%;
-    height: 200px;
-  }
-
-  @media (max-width: 575px) {
-    width: 100%;
-    height: 250px;
-  }
+  transition: transform 0.5s ease-in-out;
 `;
 
 export const HoverContainer = styled.div`
@@ -94,6 +59,41 @@ export const HoverContainer = styled.div`
   transition: opacity 0.5s ease-in-out;
   background: ${(props) => props.theme.colors.navbar};
   opacity: 0;
+`;
+
+export const Card = styled.div`
+  width: 32%;
+  height: 200px;
+
+  position: relative;
+
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  &:hover {
+    ${HoverContainer} {
+      opacity: 1;
+    }
+
+    ${Thumb} {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 49%;
+    height: 250px;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    width: 48%;
+    height: 200px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    height: 250px;
+  }
 `;
 
 export const Description = styled.h2`

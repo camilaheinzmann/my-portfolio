@@ -34,7 +34,7 @@ function AboutMe() {
           <AboutContainer>
             <Title>Sobre mim</Title>
             <About>
-              <strong>Oie!</strong>
+              Oie!
               <br />
               Me chamo Camila Heinzmann, tenho 25 anos, sou bacharela em Ciência
               da Computação e Desenvolvedora Front-end.

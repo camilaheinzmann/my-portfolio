@@ -106,6 +106,15 @@ export const Skills = styled.div`
   flex-wrap: wrap;
 `;
 
+export const InnerCard = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+`;
+
 export const Badge = styled.div`
   width: 80px;
   height: 80px;
@@ -118,18 +127,11 @@ export const Badge = styled.div`
   perspective: 1000px;
   text-align: center;
 
-  &:hover > div {
-    transform: rotateY(180deg);
+  &:hover {
+    ${InnerCard} {
+      transform: rotateY(180deg);
+    }
   }
-`;
-
-export const InnerCard = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 `;
 
 export const FrontCard = styled.div`
@@ -146,8 +148,7 @@ export const FrontCard = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  svg,
-  img {
+  svg {
     width: 40px;
     height: min-content;
   }
@@ -167,9 +168,6 @@ export const BackCard = styled.div`
 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-
-  span {
-  }
 `;
 
 export const LabelTech = styled.span`
