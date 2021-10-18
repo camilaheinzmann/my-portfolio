@@ -94,7 +94,7 @@ export const Card = styled.div`
 
   @media (max-width: 575px) {
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
 `;
 
