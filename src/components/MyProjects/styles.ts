@@ -40,7 +40,7 @@ export const Thumb = styled.img`
   height: 100%;
   object-fit: cover;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 `;
 
 export const HoverContainer = styled.div`
@@ -56,7 +56,7 @@ export const HoverContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
   background: ${(props) => props.theme.colors.navbar};
   opacity: 0;
 `;
@@ -69,6 +69,8 @@ export const Card = styled.div`
 
   margin-bottom: 20px;
   overflow: hidden;
+
+  border: ${(props) => `1px solid ${props.theme.colors.silverBackground}`};
 
   &:hover {
     ${HoverContainer} {
