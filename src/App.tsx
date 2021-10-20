@@ -9,6 +9,7 @@ import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const [theme, setTheme] = usePersistedTheme<DefaultTheme>("theme", light);
@@ -24,6 +25,7 @@ function App() {
       <Banner />
       <AboutMe />
       <MyProjects />
+      <ContactForm />
     </ThemeProvider>
   );
 }

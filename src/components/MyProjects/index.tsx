@@ -103,7 +103,7 @@ function MyProjects() {
                 <Description>{repository.name}</Description>
                 <Techs>
                   {repository.techs.map((tech) => (
-                    <Tech>{tech}</Tech>
+                    <Tech key={`${repository.id}_${tech}`}>{tech}</Tech>
                   ))}
                 </Techs>
                 <LinkContainer>
