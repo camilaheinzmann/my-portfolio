@@ -14,28 +14,36 @@ import {
   Title,
   Wrapper,
 } from "./styles";
+import { sendMessage } from "../../utils/sendMessage";
 
 import { ReactComponent as EmailImg } from "../../assets/img/reading.svg";
 import { ReactComponent as EmailIcon } from "../../assets/icons/email.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/icons/linkedin.svg";
 import { ReactComponent as GithubIcon } from "../../assets/icons/githubMono.svg";
-import { sendMessage } from "../../utils/sendMessage";
+
+type MessageType = {
+  name: string;
+  email: string;
+  text: string;
+};
 
 const accessKey = process.env.REACT_APP_STATIC_FORMS_ACCESS_KEY;
 
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
+  const [message, setMessage] = useState<MessageType>({
+    name: "",
+    email: "",
+    text: "",
+  });
 
   async function handleSubmitForm(e: FormEvent) {
     e.preventDefault();
 
     const contact = {
-      name: name,
-      email: email,
-      message: message,
+      name: message.name,
+      email: message.email,
+      message: message.text,
       subject: "Mensagem de contato de camilaheinzmann.vercel.app",
       accessKey: accessKey,
     };
@@ -45,9 +53,11 @@ function ContactForm() {
 
       if (response) {
         setResponse("Sua mensagem foi enviada com sucesso!");
-        setName("");
-        setEmail("");
-        setMessage("");
+        setMessage({
+          name: "",
+          email: "",
+          text: "",
+        });
       } else {
         setResponse(
           "Ocorreu um erro ao enviar sua mensagem! Por favor, tente novamente mais tarde ;)"
@@ -72,23 +82,23 @@ function ContactForm() {
           <Label>Nome</Label>
           <Input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={message.name}
+            onChange={(e) => setMessage({ ...message, name: e.target.value })}
             data-testid="form-name"
             required
           />
           <Label>E-mail</Label>
           <Input
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={message.email}
+            onChange={(e) => setMessage({ ...message, email: e.target.value })}
             data-testid="form-email"
             required
           />
           <Label>Mensagem</Label>
           <Message
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            value={message.text}
+            onChange={(e) => setMessage({ ...message, text: e.target.value })}
             data-testid="form-message"
             required
           />
